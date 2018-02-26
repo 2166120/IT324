@@ -11,8 +11,8 @@ this also on the other files that are needed by the website.
 9. On Site name, type “IT324PrelimsPointers” and on Host name, type “ www.IT324PrelimsPointers.com ”.
 Choose “Classic .NET AppPool” on the Application pool. The type of the binding will be http, the
 IP address will be the IPv4 address of the computer used, and the Port will be the concatenation of
-“80” plus "80".
+“80” plus any two numbers.
 10. Go to “C:\Windows\System32\drivers\etc\hosts”. Right click on the hosts file and for this
 manual, choose Notepad++ as the editor. On the last line of the file, press enter and then type the
 IP address space “ www.IT324PrelimsPointers.com ” and then save. When prompted, always just click on Yes.
-11. Click on “Browse www.IT324PrelimsPointers.com on 192.168.254.110:8080 (http)”.
+11. Click on “Browse www.IT324PrelimsPointers.com on ip address:port (http)”.
