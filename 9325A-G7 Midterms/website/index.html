@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="index.css" rel="stylesheet" type="text/css">
+    
+		<meta charset="UTF-8">
+    
+		<title>WebTech Midterms</title>
+	<body>
+		<h1>Cascading Style Sheets (CSS)</h1>
+		<ul>
+			<li>
+				Language used to specify the presentation of structurally markedup documents.
+			</li>
+			<li>
+				Developed by Hakon Wium Lie, Bert Bos and World Wide Consortium (W3C).
+			</li>
+		</ul>
+		<br/>
+		
+		<h2>Versions</h2>
+		<ul>
+			<li>
+				CSS 1 (W3C Recommendation by December 1996)
+			</li>
+			<li>
+				CSS 2 (W3C Recommendation by May 1998)
+			</li>
+			<li>
+				CSS 2.1 (W3C Recommendation by June 2011)
+			</li>
+			<li>
+				CSS 3
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Rule Sets</h3>
+		<ul>
+			<li>
+				Consists of selector, followed by a brace-enclosed declaration block,
+				which contains zero or more semi-colon seperated property declarations
+				which in turn consists of a property name followed by property value
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Selectors</h3>
+		<ul>
+			<li>
+				Patterns used to select the elements to be styled
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Rule Precendence</h3>
+		<ul>
+			<li>
+				author, user, user-agent, normal, important
+			</li>
+			<li>
+				Resolution: by origin and importance, by specificity, by order
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Declarations</h3>
+		<ul>
+			<li>
+				Consists of a property, the style attribute that can be changed, and
+				value
+			</li>
+			<li>
+				Applied to either all elements of a specific type or only those
+				elements that match a certain attribute
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Preprocessors</h3>
+		<ul>
+			<li>
+				Guarantees CSS using a custom language syntax that typically includes
+				features that don't exist in pure CSS
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>CSS Frameworks</h3>
+		<ul>
+			<li>
+				Provides predefined CSS design functionality that can be reused,
+				extended or customized
+			</li>
+		</ul>
+		<br/>
+		
+		<h3>Polyfills</h3>
+		<ul>
+			<li>
+				Provides features that developers expect browsers to provide natively
+			</li>
+		</ul>
+		<br/>
+		
+		<img src="../website/media/CSS-cheat-sheet.png" alt="CSS Cheat Sheet"/>
+		<br/>
+		
+		<br/>
+
+
+		<h1>JavaScript</h1>
+		<ul>
+			<li>
+				Programming language of HTML and the Web.
+			</li>
+			<li>
+				Also used by non-browser environments.
+			</li>
+			<li>
+				Created by Brendan Eich at Netscape
+			</li>
+			<li>
+				Having versions from 1.0 to 1.8.5.
+			</li>
+		</ul>
+		<br/>
+		
+		<h2>ECMAScript</h2>
+		<ul>
+			<li>
+				Developed by European Computer Manufacturers Association (ECMA)
+				Imnternational after it adopted JavaScript
+			</li>
+		</ul>
+		<br/>
+
+		<h2>ECMAScript Versions</h2>
+		<ul>
+			<li>
+				JavaScript 1 (Released in June 1997)
+			</li>
+			<li>
+				JavaScript 2 (Released in June 1998)
+			</li>
+			<li>
+				JavaScript 3 (Released in December 1999)
+			</li>
+			<li>
+				JavaScript 4
+			</li>
+			<li>
+				JavaScript 5 (Released in December 2009)
+			</li>
+			<li>
+				JavaScript 5.1 (Released in June 2011)
+			</li>
+			<li>
+				JavaScript 6 (Projected in Mid 2015)
+			</li>
+		</ul>
+		<br/>
+		
+				
+		<h3>Document Object Model (DOM) Appilication Programming Interface(API)</h3>
+		<ul>
+			<li>
+				Allows access to the Hypertext Markup Language (HTML) document from
+				within scripts associated with the web page.
+			</li>
+			<li>
+				Has a DOM tree that represents a parsed HTML document.
+			</li>
+		</ul>
+		<br/>
+		
+		<img src="../website/media/pic_htmltree.gif" alt="DOM Tree"/>
+		<br/>
+		
+		<h3>JavaScript Event Handling</h3>
+		<br/>
+		
+		<h4>Event Propagation Order (DOM-compliant Browsers)</h4>
+		<ul>
+			<li>
+				Capturing Phase > The event goes down to the element.
+			</li>
+			<li>
+				Target Phase > The event reached the target element.
+			</li>
+			<li>
+				Buubling Phase > The event bubbles up from the element.
+			</li>
+		</ul>
+		<br/>
+		
+		<img src="../website/media/capture_phase_72.png"
+		alt="Event Capturing Phase and Event Bubbling Phase"/>
+		
+		<h4>Event Handler Registration</h4>
+		<h5>Method#1 (inline HTML event attribute)</h5>
+		<ul>
+			<li>
+				Non-standard, universal support, not recommended
+			</li>
+		</ul>
+		<h5>Method#2 (pre-DOM L2)</h5>
+		<ul>
+			<li>
+				Non-standard, universal support
+			</li>
+			<li>
+				Can register only one handler which can be removed by assigning a null
+				value to an attribute
+			</li>
+		</ul>
+		<h5>Method#3 (DOM L2 Registration)</h5>
+		<ul>
+			<li>
+				Standard, well-supported
+			</li>
+			<li>
+				Can register more than one event handler which can be removed by using
+				removeEventHandler() functtion
+			</li>
+			<li>
+				Can register handlers on the bubble or capture phase
+			</li>
+			<li>
+				Uses dispatchEvent() function to trigger event programmatically
+			</li>
+		</ul>
+		<h5>Method#4</h5>
+		<ul>
+			<li>
+				Can register more than one event handler which can be removed by
+				detachEvent() function
+			</li>
+			<li>
+				Can register handlers only on the bubble phase in old MS browsers
+			</li>
+			<li>
+				Uses fireEvent() function to trigger event programmatically
+			</li>
+		</ul>
+		<br/>
+		
+		
+		<hr/>
+		
+		
+		<h1>References</h1>
+		<ul>
+			<li><a href="https://www.w3schools.com/">
+				https://www.w3schools.com/
+			</a></li>
+			<li><a href="https://www.tutorialrepublic.com/">
+				https://www.tutorialrepublic.com/
+			</a></li>
+			<li>
+				https://www.designzzz.com/wp-content/uploads/2015/06/CSS-cheat-sheet.png
+			</li>
+			<li><a href="https://developer.mozilla.org/bm/docs/Web/JavaScript">
+				https://developer.mozilla.org/bm/docs/Web/JavaScript
+			</a></li>
+			<li><a href="http://www.itprotoday.com/web-development/state-javascript-language-versions">
+				http://www.itprotoday.com/web-development/state-javascript-language-versions
+			</a></li>
+			<li><a href="https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm">
+				https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm
+			</a></li>
+		</ul>
+		
+		<script type="text/javascript">
+			function init() {
+				window.alert("Hello from 9325A Group 7 students of IT 324 Web Tech from the department of SCIS in SLU Baguio 2018!");
+			}
+		</script>
+		
+		<noscript>JavaScript support is not enabled.</noscript>
+	</body>
+</html>
